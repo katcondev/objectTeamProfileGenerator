@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Profile</title>
+    <title>Team Profiles</title>
     <link rel="stylesheet" type='text/css' href="./assets/css/styleTW.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -18,25 +18,16 @@
      <main class="container mx-auto mt-5 border-0">     
     
         <div class="flex-column grid sm:grid-cols-2 md:grid-cols-3 gap-4" >
-            <div class="max-w-md rounded shadow-md shadow-indigo"> 
-            
+            <div class="max-w-md rounded shadow-md shadow-indigo">       
                 <div class="p-4 bg-sky-100">
-                    <h1 class="text-gray-dark text-xl md:text-3xl font-roboto mt-5">${Employee.name} <span class="md:text-l">${Employee.role}</span> </h1>
+                  <h1 class="text-gray-dark text-xl md:text-3xl font-roboto mt-5">${manager.name} <span class="md:text-l">${manager.role}</span> </h1>
                     </br> 
-                    <p class="mt-2 sm:text-l"><strong>ID:</strong> ${Employee.id} </p>
-                    <p class="mt-2 sm:text-l"><strong>E-mail:</strong> ${Employee.email} </p>
-                    <p class="mt-2 sm:text-l"><strong>Office Number:</strong> ${Employee.manager.officeNumber]}</p>
-                    <p class="mt-2 sm:text-l"><strong>Github:</strong> ${Employee.engineer.github} </p>
-                    <p class="mt-2 sm:text-l"><strong>School:</strong> ${Employee.intern.school} </p>
+                      <p class="mt-2 sm:text-l"><strong>ID:</strong> ${manager.id} </p>
+                      <p class="mt-2 sm:text-l"><strong>E-mail:</strong> ${manager.email} </p>
+                      <p class="mt-2 sm:text-l"><strong>Office Number:</strong> ${manager.officeNumber}</p>
                 </div>  
-            </div>
+              </div>
         </div>
-
-
-
-        
-
-
     </main>
 </body>
 </html>
