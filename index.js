@@ -6,6 +6,7 @@ const Manager = require("./lib/manager.js");
 const Engineer = require("./lib/engineer.js");
 const Intern = require("./lib/intern.js")
 
+
 const teamArr = [];
 
 const addManager = () => {
@@ -68,10 +69,12 @@ const addManager = () => {
     .then(managerData => {
         const  { name, id, email, officeNumber } = managerData; 
         const manager = new Manager (name, id, email, officeNumber);
-
+        // console.log(getRole());
         teamArr.push(manager); 
         console.log(manager); 
-
+        console.log("*****here********");
+        console.log(teamArr);
+        // console.log(getRole());
     })
 };
 
@@ -163,7 +166,7 @@ const addEmployee = () => {
         }
     ])
     .then(employeeData => {
-
+        
         let { name, id, email, role, github, school, confirmAddEmployee } = employeeData; 
         let employee; 
 
@@ -186,6 +189,7 @@ const addEmployee = () => {
             return teamArr;
         }
     })
+    
 };
 
 addManager()
