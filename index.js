@@ -6,8 +6,9 @@ const Manager = require("./lib/manager.js");
 const Engineer = require("./lib/engineer.js");
 const Intern = require("./lib/intern.js")
 
+const employees = [];
 
-function addTeamMember() {
+const addTeamMember = async () => {
     inquirer.prompt([{
         message: "Enter team member's name",
         name: "name"
@@ -61,24 +62,25 @@ function addTeamMember() {
             } else {
                 newMember = new Manager(name, id, email, roleInfo);
             }
-            employees.push(newMember)
-        
+            employees.push(newMember);
+            addHtml(newMember)
             .then(function() {
                 if (moreMembers === "yes") {
-                    addMember();
+                    addTeamMember();
                 } else {
                     generatePage();
                 }
             });
-            
+        
         });
     });
 }
+ 
 
 addTeamMember()
 //   .then(newMember)
-  .then(newMember => {
-      return generatePage(newMember);
+  .then(employees => {
+      return generatePage(employees);
   })
   .then(pageHTML => {
       return writeFile(pageHTML);
