@@ -78,7 +78,7 @@ const addTeamMember = async () => {
  
 
 addTeamMember()
-//   .then(newMember)
+  .then(newMember)
   .then(employees => {
       return generatePage(employees);
   })
