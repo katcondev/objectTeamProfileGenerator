@@ -29,7 +29,7 @@ This application is covered by the MIT license.
 ## Contributing
 Kat Contreras
 ## Tests
-yes
+Install Yest and run NPM run test.
 ## Questions
 Just email me.<br />
 <br />
