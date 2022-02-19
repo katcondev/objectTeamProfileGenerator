@@ -13,6 +13,12 @@ A CLI application that generates a webpage that displays team information for ea
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
+This application requires that Node be installed along with the inquirer dependencies. 
+Instructions on how to do so can be found here: https://www.npmjs.com/package/inquirer 
+
+[![IMAGE ALT TEXT HERE](https://katcontrerasdev.github.io/readme-generator/Develop/dist/ezgif-2-a647ac54d4.gif)](https://youtu.be/rhCwVU25R-g)
+
+Youtube instruction video: https://www.youtube.com/watch?v=YjlBxBrvdFQ
 Download entire package and run node index.js
 ## Usage
 A developer that needs a quick webpage generated for team contact.
