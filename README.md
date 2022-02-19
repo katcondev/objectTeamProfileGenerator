@@ -16,7 +16,7 @@ A CLI application that generates a webpage that displays team information for ea
 This application requires that Node be installed along with the inquirer dependencies. 
 Instructions on how to do so can be found here: https://www.npmjs.com/package/inquirer 
 
-[![IMAGE ALT TEXT HERE](https://katcontrerasdev.github.io/objectTeamProfileGenerator/dist/demo.gif)](https://youtu.be/YjlBxBrvdFQ)
+[![IMAGE ALT TEXT HERE](https://raw.githubusercontent.com/katcontrerasdev/objectTeamProfileGenerator/main/dist/demo.gif)
 
 Youtube instruction video: https://www.youtube.com/watch?v=YjlBxBrvdFQ
 Download entire package and run node index.js
