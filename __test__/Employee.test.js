@@ -3,7 +3,6 @@ const Employee = require('../lib/employee.js')
 jest.mock('../lib/employee.js');
 
 console.log(new Employee());
-console.log(getRole(Employee))
 
 test('create an employee object', () => {
     const employee = new Employee('Kat', 22, 'kat.contreras@gmail.com');
@@ -14,10 +13,4 @@ test('create an employee object', () => {
  
 });
 
-// gets role from getRole()
-test('gets role of employee', () => {
-    const employee = new Employee('Kat', 22, 'kat.contreras@gmail.com');
-    
-    expect(getRole()).toEqual(toEqual('Employee'));
-});
 
