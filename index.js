@@ -82,7 +82,7 @@ function startHtml() {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile</title>
-        <link rel="stylesheet" type='text/css' href="styleTW.css">
+        <link rel="stylesheet" type='text/css' href="assets/css/styleTW.css">
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-sky-50">
@@ -100,7 +100,7 @@ function startHtml() {
             console.log(err);
         }
     });
-    console.log("start");
+    console.log("Let's get started!");
 }
 
 function addHtml(member) {
@@ -117,7 +117,7 @@ function addHtml(member) {
               <h1 class="text-gray-dark text-xl md:text-3xl font-roboto mt-5 mb-5">${name} </h1>
                   <p class="mt-2 text-indigo-500 sm:text-l">${role}</p>
                   <p class="mt-2 sm:text-l"><strong>ID:</strong> ${id} </p>
-                  <p class="mt-2 sm:text-l"><strong>E-mail:</strong> ${email} </p>
+                  <p class="mt-2 sm:text-l"><strong>E-mail:</strong> <a href="mailto:${email}">${email}</a></p>
                   <p class="mt-2 sm:text-l"><strong>Github:</strong> ${gitHub}</p>
             </div>  
             </div>`;
@@ -128,7 +128,7 @@ function addHtml(member) {
               <h1 class="text-gray-dark text-xl md:text-3xl font-roboto mt-5 mb-5">${name} </h1>
                   <p class="mt-2 text-indigo-500 sm:text-l">${role}</p>
                   <p class="mt-2 sm:text-l"><strong>ID:</strong> ${id} </p>
-                  <p class="mt-2 sm:text-l"><strong>E-mail:</strong> ${email} </p>
+                  <p class="mt-2 sm:text-l"><strong>E-mail:</strong> <a href="mailto:${email}">${email}</a></p>
                   <p class="mt-2 sm:text-l"><strong>School:</strong> ${school}</p>
             </div>  
             </div>`;
@@ -139,7 +139,7 @@ function addHtml(member) {
               <h1 class="text-gray-dark text-xl md:text-3xl font-roboto mt-5 mb-5">${name} </h1>
                   <p class="mt-2 text-indigo-500 sm:text-l">${role}</p>
                   <p class="mt-2 sm:text-l"><strong>ID:</strong> ${id} </p>
-                  <p class="mt-2 sm:text-l"><strong>E-mail:</strong> ${email} </p>
+                  <p class="mt-2 sm:text-l"><strong>E-mail:</strong> <a href="mailto:${email}">${email}</a></p>
                   <p class="mt-2 sm:text-l"><strong>Office Number:</strong> ${phone}</p>
             </div>  
             </div>`
